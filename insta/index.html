@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maname&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: "Roboto", sans-serif;
+            font-weight: 100;
+            font-style: normal;
+        }
+        a{
+            text-decoration: none;
+            list-style: none;
+            font-family: "Roboto", sans-serif;
+            font-weight: 100;
+            font-style: normal;
+        }
+        .login{
+            display: flex;
+            margin-top: 90px;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+
+        }
+        .login-box{
+            border: 1px solid black;
+            width: 400px;
+            height: 450px;
+            text-align: center;
+            background-color: white;
+        }
+        .logo{
+            width: 100%;
+            height: 100px;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .logo h1{
+            font-family: "Satisfy", cursive;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 45px;
+            position: absolute;
+            bottom: 0;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+        }
+        .input-box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .input-box input{
+            width: 80%;
+            height: 40px;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        .login-button{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .login-button button{
+            width: 80%;
+            height: 30px;
+            cursor: pointer;
+            background-color: rgb(57, 164, 230);
+            border: none;
+            color: white;
+            border-radius: 5px;
+        }
+        .or-line{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 50px;
+            font-size: 15px;
+        }
+        hr{
+            width: 36%;
+            height: 1px;
+            margin-top: 9px;
+            margin-right: 4px;
+            margin-left: 4px;
+        }
+        .main{
+            margin-top: 50px;
+        }
+        .facebook{
+            display: flex;
+            justify-content: center;
+            margin-top: -25px;
+            margin-bottom: 20px;
+        }
+        .facebook i{
+            font-size: 25px;
+            margin-right: 5px;
+        }
+        .facebook p{
+            font-size: 16px;
+            margin-top: 4px;
+            letter-spacing: 0.5px;
+        }
+        .forget-password p{
+            font-size: 13px;
+            color: hsl(0, 0%, 40%);
+        }
+        .footer-box{
+            border: 1px solid black;
+            width: 400px;
+            height: 70px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+        .footer-main a{
+            color: rgb(0, 182, 255);
+            font-weight: 600;
+            cursor: pointer;
+        }
+        @media screen and (max-width:450px) {
+            body{
+                background-image: url(mixter-main-1.jpg);
+                background-position: center;
+                background-repeat: repeat;
+            }
+            .footer-box{
+                background-color: white;
+                border: none;
+            }
+            .login-box{
+                border: none;
+                background-color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <div class="login-box">
+            <div class="logo">
+                <h1>Instagram</h1>
+            </div>
+            <div class="main">
+                <div class="input-box">
+                    <input type="text" placeholder="Phone number,username,or email" required>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="login-button">
+                    <button>Log in</button>
+                </div>
+                <div class="or-line">
+                    <hr><p>OR</p><hr>
+                </div>
+                <div class="facebook">
+                    <i class='bx bxl-facebook-square' style='color:#0f4790'  ></i><p>Log in with Facebook</p>
+                </div>
+                <div class="forget-password">
+                    <p>Forgot password?</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-box">
+            <div class="footer-main">
+                <p>Don't have an account? <a target="_self" onclick="abc()" href="./source/signup.html">Sign up.</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- <script>
+        function abc(){
+            window.location.assign("signup.html")
+        }
+    </script> -->
+</body>
+</html>
